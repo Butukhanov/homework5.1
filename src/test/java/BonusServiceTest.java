@@ -52,9 +52,9 @@ class BonusServiceTest {
         BonusService service = new BonusService();
 
         // подготавливаем данные:
-        long amount = 1_999_999_999;
-        boolean registered = true;
-        long expected = 500;
+        long amount = 2000;
+        boolean registered = false;
+        long expected = 60;
 
         // вызываем целевой метод:
         long actual = service.calculate(amount, registered);
